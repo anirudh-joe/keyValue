@@ -1,0 +1,127 @@
+{
+	"variables": [],
+	"info": {
+		"name": "AccelData",
+		"_postman_id": "b786c0e5-1b02-b5c0-1edc-443953c3ace5",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9053/api/createKV",
+			"request": {
+				"url": "http://localhost:9053/api/createKV",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"key\":\"id1\",\n\t\"value\":\"poi90909021212212312\"\n}"
+				},
+				"description": "ANPR_POST"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9053/api/updateKV",
+			"request": {
+				"url": "http://localhost:9053/api/updateKV",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"key\":\"id1000\",\n\t\"value\":\"surbhi\"\n}"
+				},
+				"description": "ANPR_POST"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9053/api/deleteKV",
+			"request": {
+				"url": "http://localhost:9053/api/deleteKV",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"key\":\"id1232\",\n\t\"value\":\"anirudh\"\n}"
+				},
+				"description": "ANPR_POST"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9053/api/readKV?key=id1",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9053/api/readKV?key=id1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9053",
+					"path": [
+						"api",
+						"readKV"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "id1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "deviceid",
+						"value": "hiioioo",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "PlantCode",
+						"value": "Aditya",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "ChokeCode",
+						"value": "CHK01",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "timestamp",
+						"value": "1212312",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
